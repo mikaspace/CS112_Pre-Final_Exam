@@ -11,14 +11,14 @@ def praym(num):
     return True
 while True:
     start = int(input('Enter a number [start]: '))
+    if start == 0:
+        print('Program Terminated.')
+        break
     if start < 0:
         print('Enter a non-negative number.')
         continue
 
     end = int(input('Enter a number [end]: '))
-    if end == 0:
-        print('Program Terminated.')
-        break
     if end <= start:
         print(f'Enter a number greater than {start}.')
         continue
